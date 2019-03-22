@@ -1,0 +1,29 @@
+body{
+background:#0f121f;
+background-image:url(/static/GP/css/images.jpg);
+}
+table, td, th {
+    border: 2px solid #051414;
+background-color:#ffffff;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;v;
+
+
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+background-color:#ffffff;
+
+
+}
+body
+{
+background-color: #002533;
+
+}

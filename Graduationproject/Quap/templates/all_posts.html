@@ -1,0 +1,90 @@
+<!—all_posts-
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>pytyhon news</title>
+          <link rel="stylesheet" href="static/GP/css/style.css" >
+  </head><!--{%static 'GP/css/style.css' %}-->
+  <body>
+      <form action="homeView" >
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col mt-5">
+  <div class="card" >
+
+
+  <div class="card-body">
+
+    <h5 class="card-title">Select Course</h5>
+      <p class="card-text">{{post.content|truncatewords:10}}</p>
+            <select>
+                <li>
+                    <option href="#">CS114</option>
+                </li>
+
+                <li>
+                    <option href="#">CS120</option>
+                </li>
+
+                <li>
+                    <option href="#">CS130</option>
+                </li>
+
+                <li>
+                    <option href="#">CS242</option>
+                </li>
+            </select>
+            </ul>
+</p>
+
+  </div>
+</div></div><br><br>
+<div class="col mt-5"><div class="card" >
+
+  <div class="card-body">
+    <h5 class="card-title">Enter Question:</h5>
+    <p class="card-text">Q1 : <br>
+<textarea id="q1" rows="3" cols="50" name="comment" form="usrform">
+Enter Q1 here...</textarea><br>
+Q2 : <br>
+<textarea id="q2" rows="3" cols="50" name="comment" form="usrform">
+Enter Q2 here...</textarea><br><br>
+Q3 : <br>
+<textarea id="q3" rows="3" cols="50" name="comment" form="usrform">
+Enter Q3 here...</textarea>
+</p>
+
+  </div>
+</div></div><br><br>
+         <div class="col mt-5"><div class="card" >
+
+  <div class="card-body">
+    <h5 class="card-title"> choose file for degree</h5>
+    <input type="file" name="file_path" id="fileToUpload" value="browse">
+
+
+<!--<a  action="url(Quap/templates/detail.html)"class="btn btn-primary"role="button">Submit</a>-->
+
+  </div><a href="{% url 'Post:post' %}"class="btn btn-primary"role="button">Submit</a>
+</div></div>
+    </div>
+
+
+    </div>
+</div>
+  </form>
+  </body>
+</html>
+
+
